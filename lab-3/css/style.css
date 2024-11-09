@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #f8f8f8;
+    font-size: 18px;
+    padding: 10px 20px;
+    position: relative;
+    transition: transform 1.2s ease;
+}
+.button svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.button span {
+    position: relative;
+    z-index: 1;
+}
+.button:hover {
+    transform: rotate(360deg);
+    opacity: 0.8;
+}
+.button rect {
+    width: 100%;
+    height: 100%;
+}
